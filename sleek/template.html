@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Creamcrop | A cream-of-the-crop, top-of-the-top, slice-and-chop, absolutely minimalist news getter</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Georama&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="utf-8">
+        <meta name="generator" content="Creamcrop ${metadata.version}" />
+        <style>
+            * {box-sizing: border-box;}
+            
+            .topnav {
+                overflow: hidden;
+                position: sticky;
+                top: 0;
+                background-color: white;
+            }
+            
+            .topnav a {
+                float: left;
+                display: block;
+                color: #000000;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+            .topnav form {
+                float: right;
+                display: block;
+                color: #000000;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+            .topnav a:hover {
+                background-color: #2196F3;
+                color: white;
+            }
+
+            .topnav button[type=submit]:hover {
+                background-color: #2196F3;
+                color: white;
+            }
+
+            .topnav input[type=text] {
+                float: right;
+                padding: 6px;
+                border: none;
+                margin-top: 8px;
+                font-size: 17px;
+                background-color: #ced3db;
+            }
+            /* Change color of search input when active */
+
+            .topnav input[type=text]:focus {
+                outline: none;
+                background-color: #edf0f5;
+            }
+
+            .topnav button[type=submit] {
+                float: right;
+                padding: 6px;
+                border: none;
+                margin-top: 8px;
+                margin-right: 16px;
+                font-size: 17px;
+                width: 30px;
+                background-color: #edf0f5;
+            } 
+
+            ol {
+                margin: auto;
+                width: 50%;
+                padding: 10px;
+            }
+
+            ol div {
+                background-color: #cccccc25;
+                border-bottom: #000000 solid 1px;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body style="font-family: 'Georama', sans-serif; margin: 0; border: none; padding: 0; overflow-x: hidden;">
+        <section id="main-content">
+        <div class="topnav" style="margin: 10px;">
+            <!-- Home Button -->
+            <a href="/" style='float: left; font-size: 30px;'><i class="fa fa-home"></i></a>
+            <form action="/search" method="get">
+                <button type="submit"><i class="fa fa-search"></i></button>
+                <input type="text" name="q" placeholder="Search" />
+            </form>
+            <br><br>
+        </div>
+
+        <!-- RSS feed -->
+        <section style="width: 49vw; margin-left: 0px; border-right: #000000 solid 1px; float: left; overflow-y: auto; overflow-x: hidden; height: 90vh;">
+        <h1 style="width: 50vw; text-align: center;">Your News Feed</h1>
+        <p style="margin: auto; text-align: center;">Your news feed from creamcrop, the cream-of-the-crop, top-of-the-top, slice-and-chop, absolutely minimalist news getter.</p>
+        <br>
+        <hr style="width: 25vw; margin: auto;">
+        <br>
+        <ol>
+            %feed%
+        </ol>
+        <br><br>
+        <section id="read-section">
+        <h1 style="width: 50vw; text-align: center;">Already Read</h1>
+        <p style="margin: auto; text-align: center;">The items you have already read.</p>
+        <br>
+        <hr style="width: 25vw; margin: auto;">
+        <br>
+        <ol>
+            %read%
+        </ol>
+        </section>
+        </section>
+
+        <section style="width: 49vw; margin-right: 0px; float: right;" id="preview">
+        <iframe src="" style="width: 100%; height: 90vh; border: none;"></iframe>
+        </section>
+        </section>
+        <br><br>
+        <!-- Add footer -->
+        <footer style="width: 100vw; text-align: center; bottom: 0;">
+        <p>Creamcrop | A cream-of-the-crop, top-of-the-top, slice-and-chop, absolutely minimalist news getter</p>
+        </footer>
+        %update%
+        <script>
+            function preview (link) {
+                // Change src of iframe to link
+                let iframe = document.getElementById("preview").getElementsByTagName("iframe")[0];
+
+                fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(link)}`)
+                .then(response => {
+                    if (response.ok) return response.json()
+                    throw new Error('Network response was not ok.')
+                })
+                .then(data => {
+                    if (iframe.contentDocument) {
+                        doc = iframe.contentDocument;
+                    } else if(iframe.contentWindow) {
+                        doc = iframe.contentWindow.document;
+                    }
+                        doc.open();
+                        doc.writeln(data.contents);
+                        doc.close();
+                })
+            }
+        </script>
+    </body>
+</html>

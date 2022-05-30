@@ -1,0 +1,42 @@
+{
+  "feeds": [
+    "http://www.theverge.com/rss/index.xml",
+    "https://reddit.com/.rss"
+  ],
+  "custom": "./template.html",
+  "read": [
+    "https://www.theverge.com/2022/5/29/23146694/double-bladed-lightsaber-costs-500-star-wars-obi-wan-third-sister-reva",
+    "https://www.theverge.com/2022/5/29/23146454/iphone-14-pro-max-always-on-display-apple-wwdc-rumors",
+    "https://www.reddit.com/r/space/comments/v0mbqo/saturn_and_jupiter_in_the_daylight/",
+    "https://www.reddit.com/r/therewasanattempt/comments/v0lf47/to_passing_airport_security/",
+    "https://www.reddit.com/r/HumansBeingBros/comments/v0ix6i/man_rescues_crying_lost_lamb_on_a_steep_mountain/",
+    "https://www.reddit.com/r/politics/comments/v0k8mh/texas_gov_greg_abbott_booed_upon_arriving_at/",
+    "https://www.reddit.com/r/nottheonion/comments/v0jqlk/chinese_student_denied_entry_into_us_after/",
+    "https://www.reddit.com/r/nextfuckinglevel/comments/v0kict/former_us_marine_rifle_and_pistol_coach_is_fed_up/",
+    "https://www.reddit.com/r/news/comments/v0j9w4/more_than_800_houston_isd_teachers_say_they_wont/",
+    "https://www.reddit.com/r/antiwork/comments/v0hnlm/cops_are_not_workers/",
+    "https://www.theverge.com/2022/5/29/23146529/apple-cant-dismiss-cydia-antitrust-lawsuit-judge",
+    "https://www.reddit.com/r/politics/comments/v0k8mh/texas_gov_greg_abbott_booed_upon_arriving_at/",
+    "https://www.reddit.com/r/antiwork/comments/v0hnlm/cops_are_not_workers/",
+    "https://www.reddit.com/r/news/comments/v0j9w4/more_than_800_houston_isd_teachers_say_they_wont/",
+    "https://www.reddit.com/r/MadeMeSmile/comments/v0kaqz/warms_my_heart/",
+    "https://www.reddit.com/r/leagueoflegends/comments/v0a4o8/royal_never_give_up_vs_t1_msi_2022_final/",
+    "https://www.theverge.com/23141145/stranger-things-4-vecna-monster-creation-design-practical-effects",
+    "https://www.theverge.com/good-deals/2022/5/28/23144495/apple-ipad-air-2022-xbox-series-s-console-google-pixel-6-pro-lenovo-chromebook-duet-5-deal-sale",
+    "https://www.theverge.com/2022/5/28/23145559/comcast-smart-speaker-patent-design-release",
+    "https://www.theverge.com/2022/5/28/23145658/ayn-loki-handheld-runs-windows-starts-299",
+    "https://www.theverge.com/2022/5/28/23145745/twitter-circle-starting-roll-out-more-users",
+    "https://www.theverge.com/2022/5/28/23145825/star-wars-knights-old-republic-ii-sith-lords-nintendo-switch-restored-content-dlc",
+    "https://www.theverge.com/good-deals/23131413/best-memorial-day-sales-2022-tech-deals-gadgets-tvs-headphones-speakers-phones-outdoors",
+    "https://www.reddit.com/r/ShittyLifeProTips/comments/v0ls6f/slpt_dealing_with_anxiety/",
+    "https://www.reddit.com/r/PublicFreakout/comments/v0jav0/crowd_boos_texas_gov_greg_abbott_as_he_arrives_at/",
+    "https://www.reddit.com/r/politics/comments/v0acah/texas_parents_rip_ted_cruz_lame_door_solution_to/",
+    "https://www.reddit.com/r/DocumentedFights/comments/v0a2z1/short_fight_people_spreading_this_around_said/",
+    "https://www.reddit.com/r/AbruptChaos/comments/v09nue/what_would_you_do_if_a_crackhead_attacked_your_car/",
+    "https://www.reddit.com/r/unpopularopinion/comments/v0b4fy/arabmiddle_eastern_foods_are_generally_trash/",
+    "https://www.reddit.com/r/nottheonion/comments/v07nh0/tiktok_pediatricians_urge_people_to_stop_sharing/",
+    "https://www.reddit.com/r/MurderedByWords/comments/v07rel/show_me_ill_wait/",
+    "https://www.reddit.com/r/unpopularopinion/comments/v0b4fy/arabmiddle_eastern_foods_are_generally_trash/"
+  ],
+  "format": "<div onclick=\"preview('%link%')\" class=\"feed-item\">%title%</div>"
+}
