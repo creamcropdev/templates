@@ -36,7 +36,8 @@
     "https://www.reddit.com/r/unpopularopinion/comments/v0b4fy/arabmiddle_eastern_foods_are_generally_trash/",
     "https://www.reddit.com/r/nottheonion/comments/v07nh0/tiktok_pediatricians_urge_people_to_stop_sharing/",
     "https://www.reddit.com/r/MurderedByWords/comments/v07rel/show_me_ill_wait/",
-    "https://www.reddit.com/r/unpopularopinion/comments/v0b4fy/arabmiddle_eastern_foods_are_generally_trash/"
+    "https://www.reddit.com/r/unpopularopinion/comments/v0b4fy/arabmiddle_eastern_foods_are_generally_trash/",
+    "https://www.theverge.com/2022/6/10/23161647/google-cloud-processing-pi-calculation-100-trillion"
   ],
-  "format": "<div onclick=\"preview('%link%')\" class=\"feed-item\" style=\"color: blue\;">%title%</div><a href='%link%' target='_blank'><img src='https://cdn1.iconfinder.com/data/icons/ios-edge-line-8/25/Open-New-Window-512.png'></a>"
+  "format": "<div onclick=\"preview('%link%')\" class=\"feed-item\" style=\"color: blue;\">%title%</div><a href='%link%' target='_blank'><img src='https://cdn1.iconfinder.com/data/icons/ios-edge-line-8/25/Open-New-Window-512.png' style='width: 10px;'></a>"
 }
