@@ -38,5 +38,5 @@
     "https://www.reddit.com/r/MurderedByWords/comments/v07rel/show_me_ill_wait/",
     "https://www.reddit.com/r/unpopularopinion/comments/v0b4fy/arabmiddle_eastern_foods_are_generally_trash/"
   ],
-  "format": "<div onclick=\"preview('%link%')\" class=\"feed-item\">%title%</div>"
+  "format": "<div onclick=\"preview('%link%')\" class=\"feed-item\" style=\"color: blue\;">%title%</div><a href='%link%' target='_blank'><img src='https://cdn1.iconfinder.com/data/icons/ios-edge-line-8/25/Open-New-Window-512.png'></a>"
 }
